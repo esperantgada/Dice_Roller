@@ -1,4 +1,4 @@
-package com.example.diceroller
+package eg.esperantgada.diceroller
 
 import org.junit.Test
 
@@ -12,10 +12,11 @@ import org.junit.Assert.*
 
 class ExampleUnitTest {
 
+    //This tests if the Dice class and roll method functions well
     @Test
     fun generate_number(){
-        val dice = Dice(5)
-        val rollResult = dice.roll()
-        assertTrue("The value of rollResult was not between 1 and 6", rollResult in 1..6)
+        val dice = Dice(6)
+        val diceRolled = dice.roll()
+        assertTrue("The value of roll result was not between 1 and 6", diceRolled in 1..6 )
     }
 }
